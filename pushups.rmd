@@ -74,6 +74,7 @@ It appears that a skill player has the highest amount of pushups out of all play
 summary(players)
 ```
 
+The numerical results indicate that there is a higher average of pushups amongst skill  players while the line players have a lower mean.
 
 ## Inferential Results
 
@@ -84,12 +85,14 @@ The test we will use is the t-test.
 ```{r}
 t.test(pushups~position,data=players)
 ```
+
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
 The null hypothesis is $H_0$ is "There is no difference between the average pushups of line vs skill players"
 
-The boxpolot indicates that there is a difference between pushups and positions of skill and line players. As the skill players have a higher pushup count even from a minumum than the average line player. This shows that there is quite a difference significantly between the pushups from the skill players and the line players.
+The boxplot indicates that there is a difference between pushups and positions of skill and line players. As the skill players have a higher pushup count even from a minumum than the average line player. This shows that there is quite a difference significantly between the pushups from the skill players and the line players.
 
 A t-test of difference in means gave a p-value of 0.0000094, this is less than 0.05, so we reject the null hypothesis and conclude  we have evidence of a difference in average pushups between players in the two positions.
